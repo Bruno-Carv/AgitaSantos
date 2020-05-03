@@ -10,7 +10,7 @@ import Linha from '../../components/linha';
 import { Container, Form, Image } from './styles';
 
 import LogoPrefeitura from '../../assets/logoPrefeitura.png';
-import { AsyncStorage, Alert } from 'react-native';
+import { Alert } from 'react-native';
 
 export default function SignIn({ navigation }) {
 

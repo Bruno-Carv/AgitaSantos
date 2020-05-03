@@ -1,6 +1,6 @@
 import { AsyncStorage } from "react-native";
 
-export const getTokey = async () => await AsyncStorage.getItem('user');
+export const getTokey = async () => await AsyncStorage.getItem('tokey');
 
 export const signIn = async (tokey) => await AsyncStorage.setItem('tokey',tokey);
 
