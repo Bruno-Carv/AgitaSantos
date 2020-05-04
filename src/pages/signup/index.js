@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import api from '../../services/api';
-import {signIn, getTokey} from '../../services/auth';
+import {signIn} from '../../services/auth';
 
 import Input from '../../components/input';
 import Button from '../../components/button';
@@ -12,21 +12,11 @@ import { Container, Form, Image } from './styles';
 import LogoPrefeitura from '../../assets/logoPrefeitura.png';
 import { Alert } from 'react-native';
 
-export default function SignIn({ navigation }) {
+export default function SignUp({ navigation }) {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    useEffect(() => {
-        try{
-            const tokey = getTokey();
-            if(tokey){
-                navigation.navigate('HomeStack');
-            }
-        }catch{
-
-        }
-    },[]);
 
     async function signInUser() {
         await api.post('/artist/signIn', {
@@ -60,7 +50,7 @@ export default function SignIn({ navigation }) {
                     autoCompleteType="password"
                 />
                 <Button
-                    Text="Acessar"
+                    Text="LOG IN"
                     style={{ paddingTop: 20 }}
                     onPress={signInUser}
                 />
