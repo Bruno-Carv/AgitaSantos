@@ -15,7 +15,6 @@ export const Search = Styled.View`
     margin: 24px;
     margin-bottom: 140%;
     margin-top: ${Constants.statusBarHeight + 20}px;
-    z-index: 3;
 `;
 
 export const InputSearch = Styled.TextInput`
