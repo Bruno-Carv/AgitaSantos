@@ -9,13 +9,17 @@ import SignUpPage from './pages/signup';
 
 import HomePage from './pages/home';
 import MapsPage from './pages/maps';
+import ProfilePage from './pages/profile';
 
 const HomeStack = createDrawerNavigator({
     Home:{
         screen: HomePage
     },
-    Event:{
-        screen: MapsPage
+    Events:{
+        screen: MapsPage,
+    },
+    Profile:{
+        screen: ProfilePage,
     }
 });
 
