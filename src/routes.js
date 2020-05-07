@@ -12,27 +12,37 @@ import MapsPage from './pages/maps';
 import ProfilePage from './pages/profile';
 
 const HomeStack = createDrawerNavigator({
-    Home:{
+    Home: {
         screen: HomePage
     },
-    Events:{
+    Events: {
         screen: MapsPage,
     },
-    Profile:{
+    Profile: {
         screen: ProfilePage,
     }
 });
 
 const LoginStack = createStackNavigator({
-    Login:{
+    Login: {
         screen: SignInPage
     },
-    Cadastro:{
+    Cadastro: {
         screen: SignUpPage
     }
-},{
-    headerMode: 'none'
-});
+},
+    {
+        navigationOptions: {
+            header: {
+                style: {
+                    elevation: 0,
+                    shadowOpacity: 0,
+                    border: 0,
+                },
+            },
+        },
+    },
+);
 
 const AppSwith = createSwitchNavigator({
     LoadingPage,

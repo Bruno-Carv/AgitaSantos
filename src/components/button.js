@@ -7,7 +7,7 @@ export const View = Styled.View`
 
 export const ButtonView = Styled.TouchableOpacity`
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 8px;
     background: #358062;
     width: auto;
     height: 60px;

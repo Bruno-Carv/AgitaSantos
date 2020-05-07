@@ -13,13 +13,18 @@ export const InputComponent = Styled.TextInput`
 
 export const View = Styled.View`
     padding-top: 10px;
+    width: auto;
 `;
 
-export default function Button({ ...rest }) {
+export default function Button({ disabled, ...rest }) {
+
+    const ColorDisabled = (disabled) ? `#e3e3e3` : `white`;
+
     return (
         <View>
             <InputComponent
                 {...rest}
+                style={{ backgroundColor:ColorDisabled }}
             />
         </View>
     );

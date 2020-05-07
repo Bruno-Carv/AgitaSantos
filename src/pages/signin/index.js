@@ -7,10 +7,12 @@ import Input from '../../components/input';
 import Button from '../../components/button';
 import Linha from '../../components/linha';
 
-import { Container, Form, Image } from './styles';
+import { Container, Form, Image, ButtonSocial } from './styles';
 
 import LogoPrefeitura from '../../assets/logoPrefeitura.png';
 import { Alert } from 'react-native';
+import FacebookBottom from '../../components/facebookSignIn';
+import GoogleBottom from '../../components/googleSignIn';
 
 export default function SignIn({ navigation }) {
 
@@ -64,8 +66,19 @@ export default function SignIn({ navigation }) {
                     style={{ paddingTop: 20 }}
                     onPress={signInUser}
                 />
+                <ButtonSocial>
+                    <FacebookBottom />
+                    <GoogleBottom />
+                </ButtonSocial>
                 <Linha />
+                <Button
+                    Text="Cadastrar"
+                    style={{ paddingTop: 20 }}
+                    onPress={() => navigation.navigate('Cadastro')}
+                />
             </Form>
         </Container>
     );
 }
+
+SignIn.navigationOptions = { headerShown: false };
