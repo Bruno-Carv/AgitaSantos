@@ -9,7 +9,7 @@ import Linha from '../../components/linha';
 
 import { Container, Form, Image, ButtonSocial } from './styles';
 
-import LogoPrefeitura from '../../assets/logoPrefeitura.png';
+import LogoAgitaSantos from '../../assets/logo-agitasantos-hori.png';
 import { Alert } from 'react-native';
 import FacebookBottom from '../../components/facebookSignIn';
 import GoogleBottom from '../../components/googleSignIn';
@@ -45,7 +45,7 @@ export default function SignIn({ navigation }) {
     return (
         <Container>
             <Form>
-                <Image source={LogoPrefeitura} />
+                <Image source={LogoAgitaSantos} />
                 <Input
                     placeholder="Email"
                     value={email}
@@ -66,10 +66,10 @@ export default function SignIn({ navigation }) {
                     style={{ paddingTop: 20 }}
                     onPress={signInUser}
                 />
-                <ButtonSocial>
+                {/* <ButtonSocial>
                     <FacebookBottom />
                     <GoogleBottom />
-                </ButtonSocial>
+                </ButtonSocial> */}
                 <Linha />
                 <Button
                     Text="Cadastrar"

@@ -9,7 +9,6 @@ import Button from '../../components/button';
 
 import { Container, Form, Image, Row } from './styles';
 
-import LogoPrefeitura from '../../assets/logoPrefeitura.png';
 import { Alert } from 'react-native';
 
 export default function SignUp({ navigation }) {

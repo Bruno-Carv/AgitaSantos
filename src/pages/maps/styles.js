@@ -12,7 +12,6 @@ export const Search = Styled.View`
     shadow-color: #333333;
     shadow-opacity: 0.1;
     shadow-radius: 2px;
-    margin: 24px;
     margin-bottom: 140%;
     margin-top: ${Constants.statusBarHeight + 20}px;
 `;
@@ -38,14 +37,14 @@ export const SearchView = Styled.View`
     flex: 1;
 `;
 
-export const Descript = Styled.View`
-    display: flex;
-    height: 100px;
-    width: ${Dimensions.get('window').width + 20}px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    shadow-color: #333333;
-    shadow-opacity: 0.1;
-    shadow-radius: 2px;
-    z-index: 2;
-`;
+// export const Descript = Styled.View`
+//     display: flex;
+//     height: 100px;
+//     width: ${Dimensions.get('window').width + 20}px;
+//     border-radius: 10px;
+//     background-color: #ffffff;
+//     shadow-color: #333333;
+//     shadow-opacity: 0.1;
+//     shadow-radius: 2px;
+//     z-index: 2;
+// `;

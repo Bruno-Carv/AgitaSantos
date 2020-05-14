@@ -14,7 +14,7 @@ export const LinhaText = Styled.Text`
   color: #ccd0d5;
   font-size: 14px;
   top: -10px;
-  background: #E4EEFA;
+  background: #FFF;
   padding-left: 20px;
   padding-right: 20px;
 `;

@@ -73,9 +73,6 @@ export default function Maps({ navigation }) {
                         />
                     </SearchView>
                 </Search>
-                <Descript>
-                    
-                </Descript>
             </>
         </MapView>
     );

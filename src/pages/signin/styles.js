@@ -3,7 +3,7 @@ import Constants from 'expo-constants';
 
 export const Container = Styled.View`
     flex: 1;
-    background: #E4EEFA;
+    background: #FFF;
     padding: 0 18px;
     padding-top: ${Constants.statusBarHeight + 20}px;
 `;
@@ -14,7 +14,7 @@ export const Form = Styled.View`
 
 export const Image = Styled.Image`
     width: 100%;
-    height: 100px;
+    height: 240px;
     resize-mode: contain;
 `;
 

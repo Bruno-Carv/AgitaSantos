@@ -3,7 +3,7 @@ import Constants from 'expo-constants';
 
 export const Container = Styled.View`
     flex: 1;
-    background: #E4EEFA;
+    background: #FFF;
     padding: 0 18px;
 `;
 
