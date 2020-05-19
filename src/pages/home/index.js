@@ -14,7 +14,10 @@ export default function Home() {
 
     return (
         <>
-            <ListFeed contentContainerStyle={{ paddingBottom: 40 }}>
+            <ListFeed 
+                contentContainerStyle={{ paddingBottom: 40 }}
+                showsVerticalScrollIndicator={false}
+            >
                 <FeedCard
                     onPress={() => setModal(!modal)}
                 />
