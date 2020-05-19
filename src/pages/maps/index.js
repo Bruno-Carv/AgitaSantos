@@ -1,18 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
 import MapView from 'react-native-maps';
-
-import { Feather } from '@expo/vector-icons';
+import { Searchbar } from 'react-native-paper';
 
 import * as Location from 'expo-location';
-
-import { 
-    Menu, 
-    Search, 
-    InputSearch, 
-    SearchView, 
-    Descript
-} from './styles';
 
 export default function Maps({ navigation }) {
 
@@ -56,24 +47,7 @@ export default function Maps({ navigation }) {
             showsMyLocationButton
             showsUserLocation
         >
-            <>
-                <Search >
-                    <Menu
-                        onPress={() => navigation.openDrawer()}
-                    >
-                        <Feather
-                            name='menu'
-                            size={32}
-                            color='black'
-                        />
-                    </Menu>
-                    <SearchView>
-                        <InputSearch
-                            placeholder="Eventos"
-                        />
-                    </SearchView>
-                </Search>
-            </>
+            <Searchbar style={{ position: 'absolute', top: 40, flex: 1, alignSelf: 'stretch', right: 0, left: 0, marginRight:10,marginLeft:10 }} />
         </MapView>
     );
 }

@@ -1,6 +1,11 @@
+import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
-import { createDrawerNavigator } from 'react-navigation-drawer';
+import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
+
+import { Avatar } from 'react-native-paper';
+
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 import LoadingPage from './pages/loading';
 
@@ -10,17 +15,55 @@ import SignUpPage from './pages/signup';
 import HomePage from './pages/home';
 import MapsPage from './pages/maps';
 import ProfilePage from './pages/profile';
+import CamPage from './pages/Cam';
+import CommunityPage from './pages/Community';
 
-const HomeStack = createDrawerNavigator({
-    Home: {
-        screen: HomePage
+const HomeStack = createMaterialBottomTabNavigator({
+    Feed: {
+        screen: HomePage,
+        navigationOptions: {
+            tabBarIcon: ({ tintColor }) => (
+              <Icon name="home" size={20} color={tintColor} />
+            )
+        },
     },
-    Events: {
+    Comunidade:{
+        screen: CommunityPage,
+        navigationOptions: {
+            tabBarIcon: ({ tintColor }) => (
+              <Icon name="theater-masks" size={20} color={tintColor} />
+            )
+        },
+    },
+    Agita: {
+        screen: CamPage,
+        navigationOptions: {
+            tabBarIcon: ({ tintColor }) => (
+              <Icon name="plus" size={20} color={tintColor} />
+            )
+        },
+    },
+    Eventos: {
         screen: MapsPage,
+        navigationOptions: {
+            tabBarIcon: ({ tintColor }) => (
+              <Icon name="map-marked-alt" size={20} color={tintColor} />
+            )
+        },
     },
-    Profile: {
+    Perfil: {
         screen: ProfilePage,
+        navigationOptions: {
+            tabBarIcon: ({ tintColor }) => (
+              <Icon name="user-circle" size={20} color={tintColor} />
+            )
+        },
     }
+}, {
+    initialRouteName: 'Feed',
+    activeColor: '#358062',
+    inactiveColor: '#000',
+    barStyle: { backgroundColor: '#FFF' },
 });
 
 const LoginStack = createStackNavigator({
@@ -45,7 +88,6 @@ const LoginStack = createStackNavigator({
 );
 
 const AppSwith = createSwitchNavigator({
-    LoadingPage,
     LoginStack,
     HomeStack
 });

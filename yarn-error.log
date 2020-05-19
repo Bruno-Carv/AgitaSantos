@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native-text-input-mask
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native-paper
 
 PATH: 
-  C:\flutter\bin;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files (x86)\Yarn\bin\;C:\xampp\php;C:\Users\Bruno\AppData\Local\Android\Sdk\platform-tools;C:\Users\Bruno\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Users\Bruno\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\Bruno\AppData\Local\Programs\Python\Python38\;C:\Users\Bruno\AppData\Local\Microsoft\WindowsApps;C:\Users\Bruno\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bruno\AppData\Local\GitHubDesktop\bin;C:\Users\Bruno\AppData\Local\Yarn\bin;C:\Users\Bruno\AppData\Local\Android\Sdk\platform-tools;C:\Users\Bruno\AppData\Local\Microsoft\WindowsApps;C:\flutter\bin;C:\Users\Bruno\AppData\Local\Android\Sdk\tools\bin;C:\Users\Bruno\AppData\Roaming\npm;C:\Users\Bruno\AppData\Roaming\Composer\vendor\bin
+  C:\flutter\bin;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files (x86)\Yarn\bin\;C:\xampp\php;C:\Users\Bruno\AppData\Local\Android\Sdk\platform-tools;C:\Users\Bruno\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\Bruno\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\Bruno\AppData\Local\Programs\Python\Python38\;C:\Users\Bruno\AppData\Local\Microsoft\WindowsApps;C:\Users\Bruno\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bruno\AppData\Local\GitHubDesktop\bin;C:\Users\Bruno\AppData\Local\Yarn\bin;C:\Users\Bruno\AppData\Local\Android\Sdk\platform-tools;C:\Users\Bruno\AppData\Local\Microsoft\WindowsApps;C:\flutter\bin;C:\Users\Bruno\AppData\Local\Android\Sdk\tools\bin;C:\Users\Bruno\AppData\Roaming\npm;C:\Users\Bruno\AppData\Roaming\Composer\vendor\bin
 
 Yarn version: 
   1.22.0
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\Bruno\Documents\GitHub\MaratonaESAMC\Mobile\node_modules\@babel\helper-compilation-targets\node_modules\.bin'
+  Error: EPERM: operation not permitted, unlink 'C:\Users\Bruno\Documents\GitHub\MaratonaESAMC\Mobile\node_modules\@babel\compat-data\node_modules\.bin'
 
 npm manifest: 
   {
