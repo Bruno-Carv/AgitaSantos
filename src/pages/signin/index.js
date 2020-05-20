@@ -1,46 +1,43 @@
 import React, { useState, useEffect } from 'react';
-
 import api from '../../services/api';
-import {signIn, getTokey} from '../../services/auth';
-
+import { signIn, Auth } from '../../services/auth';
 import Input from '../../components/input';
 import Button from '../../components/button';
 import Linha from '../../components/linha';
-
-import { Container, Form, Image, ButtonSocial } from './styles';
-
+import { Container, Form, Image } from './styles';
 import LogoAgitaSantos from '../../assets/logo-agitasantos-hori.png';
 import { Alert } from 'react-native';
-import FacebookBottom from '../../components/facebookSignIn';
-import GoogleBottom from '../../components/googleSignIn';
+import { ActivityIndicator, Modal, Portal, Provider } from 'react-native-paper';
 
 export default function SignIn({ navigation }) {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    useEffect(() => {
-        try{
-            const tokey = getTokey();
-            if(tokey){
-                navigation.navigate('HomeStack');
-            }
-        }catch{
-
-        }
-    },[]);
+    const [loading, setLoading] = useState(false);
 
     async function signInUser() {
+        setLoading(!loading);
         await api.post('/artist/signIn', {
             email,
             password
         }).then(response => {
-            signIn(response.headers.tokey);
+            signIn(response.data);
             navigation.navigate('HomeStack');
         }).catch(error => {
-            Alert.alert('Atenção', error.response.data.error)
+            setLoading(!loading);
+            Alert.alert('Atenção', error.response.data.error);
         });
     }
+
+    async function logInAutomatic() {
+        await Auth.getUser().then((data) => {
+            (data) ? navigation.navigate('HomeStack') : null;
+        });
+    }
+    useEffect(() => {
+        logInAutomatic();
+    }, []);
 
     return (
         <Container>
@@ -66,10 +63,6 @@ export default function SignIn({ navigation }) {
                     style={{ paddingTop: 20 }}
                     onPress={signInUser}
                 />
-                {/* <ButtonSocial>
-                    <FacebookBottom />
-                    <GoogleBottom />
-                </ButtonSocial> */}
                 <Linha />
                 <Button
                     Text="Cadastrar"
@@ -77,6 +70,13 @@ export default function SignIn({ navigation }) {
                     onPress={() => navigation.navigate('Cadastro')}
                 />
             </Form>
+            <Provider>
+                <Portal>
+                    <Modal visible={loading} dismissable={false}>
+                        <ActivityIndicator animating={true} size={100} color='#358062' />
+                    </Modal>
+                </Portal>
+            </Provider>
         </Container>
     );
 }

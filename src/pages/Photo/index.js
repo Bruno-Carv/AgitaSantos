@@ -1,5 +1,6 @@
-import React from 'react';
-import { TouchableOpacity, Alert, Linking, Share } from 'react-native';
+import React, {useState} from 'react';
+import { TouchableOpacity, Linking } from 'react-native';
+import {Modal, Portal, Provider, ActivityIndicator} from 'react-native-paper';
 import {
     ViewClose,
     ViewPost,
@@ -9,20 +10,18 @@ import {
     ViewSend,
     Image
 } from './styles';
-import * as MediaLibrary from 'expo-media-library';
 import * as Sharing from 'expo-sharing';
-import * as FileSystem from 'expo-file-system';
 import Button from '../../components/button';
 import Icon from 'react-native-vector-icons/Fontisto';
 import IconSocial from 'react-native-vector-icons/FontAwesome';
+import api from '../../services/api';
 
-export default function Photo({ route, navigation }) {
+export default function Photo({ navigation }) {
 
     const data = navigation.getParam('photo', false);
-
     const photo = JSON.stringify(data);
-
     const image = JSON.parse(photo);
+    const [loading, setLoading] = useState(false);
 
     const removePhoto = async () => {
         navigation.navigate('Agita');
@@ -38,6 +37,15 @@ export default function Photo({ route, navigation }) {
         const uri = image;
         Sharing.shareAsync(uri);  
     };
+
+    const SendPost = async () => {
+        setLoading(!loading);
+        try{
+            api
+        }catch{
+            setLoading(!loading);
+        }
+    }
 
     return (
         <Image source={{ uri: image }} >
@@ -57,10 +65,17 @@ export default function Photo({ route, navigation }) {
                         </SocialButton>
                     </ViewSocial>
                     <ViewSend>
-                        <Button Text='Posta' IconName='send-o' />
+                        <Button Text='Posta' onPress={() => SendPost()} />
                     </ViewSend>
                 </ViewPost>
             </ViewController>
+            <Provider>
+                <Portal>
+                    <Modal visible={loading} dismissable={false}>
+                        <ActivityIndicator animating={true} size={100} color='#358062' />
+                    </Modal>
+                </Portal>
+            </Provider>
         </Image>
     );
 }

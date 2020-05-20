@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Avatar, Button, Card, Title, Provider, Portal, Text, Modal } from 'react-native-paper';
+import { Modal } from 'react-native';
+import { Avatar, Button, Card, Title,  } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/Feather';
 import Styled from 'styled-components/native';
 
@@ -15,31 +16,37 @@ const Body = Styled.View`
 `;
 
 
-export default function FeedCard({ Photo = null, title, Data, Users = [], Auth, Post, onPress,  }) {
+export default function FeedCard({ file ,PhotoProfile = null, title, Data, Users = [], Auth, Post, onPress,  }) {
+
+    const [modal, setModal] = useState(false);
 
     const LeftContent = props => {
-        return (Photo != null) ? <Avatar.Image {...props} size={40} source={Photo} /> : <Avatar.Text {...props} size={40} label={Auth} />
+        return (PhotoProfile != null) ? <Avatar.Image {...props} size={40} source={Photo} /> : <Avatar.Text {...props} size={40} label={Auth} />
     }
 
-    const RigthContet = props => <ViewMenu onPress={onPress}><Icon {...props} size={20} name='more-horizontal' /></ViewMenu>
+    const RigthContet = props => <ViewMenu onPress={() => setModal(!modal)}><Icon {...props} size={30} name='more-vertical' /></ViewMenu>
 
 
     return (
+        <>
         <ViewCard   activeOpacity={.7}>
             <Card>
                 <Card.Title
                     left={LeftContent}
                     right={RigthContet}
                 />
-                <Card.Cover />
-                <Card.Content>
-                    <Title>Olá</Title>
-
-                </Card.Content>
+                <Card.Cover source={{ uri: file }} />
                 <Card.Actions>
                     <Button>Like</Button>
                 </Card.Actions>
+                <Card.Content>
+                    <Title>{title}</Title>
+                </Card.Content>
             </Card>
         </ViewCard>
+        <Modal visible={modal} onDismiss={() => setModal(!modal)} presentationStyle='pageSheet' animationType='slide'> 
+            <Title>{modal}</Title>
+        </Modal>
+        </>
     )
 }
