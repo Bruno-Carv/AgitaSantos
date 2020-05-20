@@ -16,7 +16,20 @@ import HomePage from './pages/home';
 import MapsPage from './pages/maps';
 import ProfilePage from './pages/profile';
 import CamPage from './pages/Cam';
+import PhotoPage from './pages/Photo';
 import CommunityPage from './pages/Community';
+
+const CameraStack = createStackNavigator({
+    Camera: {
+        screen: CamPage
+    },
+});
+
+const PhotoStack = createStackNavigator({
+    Photo:{
+        screen: PhotoPage
+    }
+});
 
 const HomeStack = createMaterialBottomTabNavigator({
     Feed: {
@@ -36,7 +49,7 @@ const HomeStack = createMaterialBottomTabNavigator({
         },
     },
     Agita: {
-        screen: CamPage,
+        screen: CameraStack,
         navigationOptions: {
             tabBarIcon: ({ tintColor }) => (
               <Icon name="plus" size={20} color={tintColor} />
@@ -89,7 +102,8 @@ const LoginStack = createStackNavigator({
 
 const AppSwith = createSwitchNavigator({
     LoginStack,
-    HomeStack
+    HomeStack,
+    PhotoStack
 });
 
 const AppRouter = createAppContainer(AppSwith);

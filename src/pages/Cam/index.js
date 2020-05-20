@@ -3,12 +3,14 @@ import { Text, View, Alert } from 'react-native';
 import { Camera } from 'expo-camera';
 import * as MediaLibrary from 'expo-media-library';
 import * as Permissions from 'expo-permissions';
-
+import * as ImagePicker from 'expo-image-picker';
 import CameraButton from '../../components/CameraButton';
 import { ViewCamera, ViewButtonCamera } from './styles';
 import AlbumCamera from '../../components/AlbumCamera';
 
-export default function Cam() {
+const options = { quality: 1, base64: true, fixOrientation: false, exif: true };
+
+export default function Cam({ navigation }) {
 
     const [hasPermission, setHasPermission] = useState(null);
     const [hasPermissionRegister, setHasPermissionRegister] = useState(null);
@@ -32,22 +34,36 @@ export default function Cam() {
         return <Text>No access to camera</Text>;
     }
 
-    async function takePictureAndCreateAlbum() {
-        const { uri } = await camera.takePictureAsync();
+    async function registerImage() {
+        const { uri } = await camera.takePictureAsync(options);
         const asset = await MediaLibrary.createAssetAsync(uri);
         const album = await MediaLibrary.getAlbumAsync('Agita Santos');
-        if(!album){
-            await MediaLibrary.createAlbumAsync('Agita Santos', asset).then(() => {
-                Alert.alert('Create Album');
+        if (!album) {
+            await MediaLibrary.createAlbumAsync('Agita Santos', asset).then((result) => {
+                navigation.navigate('Photo', { photo: uri });
             }).catch((err) => {
                 Alert.alert(err);
             });
-        }else{
-            await MediaLibrary.addAssetsToAlbumAsync(asset, album).then(() =>{
-                Alert.alert('Save photo Album');
+        } else {
+            await MediaLibrary.addAssetsToAlbumAsync(asset, album).then((result) => {
+                navigation.navigate('Photo', { photo: uri });
             }).catch((err) => {
                 Alert.alert(err);
             });
+        }
+    }
+
+    const AlbumImage = async () => {
+        try {
+            let result = await ImagePicker.launchImageLibraryAsync({
+                mediaTypes: ImagePicker.MediaTypeOptions.All,
+                quality: 1,
+            });
+            if (!result.cancelled) {
+                navigation.navigate('Photo', { photo: result.uri });
+            }
+        } catch (err) {
+            console.log(err);
         }
     }
 
@@ -77,12 +93,18 @@ export default function Cam() {
                             size={100}
                             icon='md-camera'
                             sizeIcon={40}
-                            onPress={() => takePictureAndCreateAlbum()}
+                            onPress={() => registerImage()}
                         />
-                        <AlbumCamera />
+                        <CameraButton 
+                            size={60}
+                            icon='md-photos'
+                            sizeIcon={25}
+                            onPress={() => AlbumImage()} />
                     </ViewButtonCamera>
                 </View>
             </Camera>
         </ViewCamera>
     );
 }
+
+Cam.navigationOptions = { headerShown: false };

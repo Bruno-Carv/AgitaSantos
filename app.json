@@ -1,11 +1,10 @@
 {
   "expo": {
-    "name": "AgitaSantos",
+    "name": "Agita Santos",
     "slug": "AgitaSantos",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,7 +21,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brunocarvalho.agitasantos"
+    },
+    "android": {
+      "package": "com.brunocarvalho.agitasantos"
+    },
+    "description": ""
   }
 }
