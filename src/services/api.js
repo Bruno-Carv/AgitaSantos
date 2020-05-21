@@ -1,11 +1,34 @@
 import axios from 'axios';
 
-const api = axios.create({
-    baseURL:'https://maratona-esamc.herokuapp.com/'
+const URL = 'http://maratona-esamc.herokuapp.com';
+
+export const api = axios.create({
+    baseURL: URL
 });
 
-// const api = axios.create({
-//     baseURL:'http://192.168.0.106:3333'
-// });
+export const uploadImageAsync = (url, uri, namefile) => {
 
-export default api;
+    const apiUrl = URL + url;
+
+    let uriParts = uri.split('.');
+    let fileType = uriParts[uriParts.length - 1];
+    const data = new Date().toISOString();
+    const formData = new FormData();
+
+    formData.append('file', {
+        uri,
+        name: `${namefile}-${data}.${fileType}`,
+        type: `image/${fileType}`,
+    });
+
+    const options = {
+        method: 'POST',
+        body: formData,
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'multipart/form-data',
+        },
+    };
+
+    return fetch(apiUrl, options);
+}

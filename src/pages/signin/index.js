@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import api from '../../services/api';
+import { api } from '../../services/api';
 import { signIn, Auth } from '../../services/auth';
 import Input from '../../components/input';
 import Button from '../../components/button';
@@ -7,7 +7,7 @@ import Linha from '../../components/linha';
 import { Container, Form, Image } from './styles';
 import LogoAgitaSantos from '../../assets/logo-agitasantos-hori.png';
 import { Alert } from 'react-native';
-import { ActivityIndicator, Modal, Portal, Provider } from 'react-native-paper';
+import Loading from '../../components/loading';
 
 export default function SignIn({ navigation }) {
 
@@ -70,13 +70,7 @@ export default function SignIn({ navigation }) {
                     onPress={() => navigation.navigate('Cadastro')}
                 />
             </Form>
-            <Provider>
-                <Portal>
-                    <Modal visible={loading} dismissable={false}>
-                        <ActivityIndicator animating={true} size={100} color='#358062' />
-                    </Modal>
-                </Portal>
-            </Provider>
+            <Loading visible={loading} />
         </Container>
     );
 }

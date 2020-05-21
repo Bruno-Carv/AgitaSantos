@@ -16,7 +16,7 @@ const Body = Styled.View`
 `;
 
 
-export default function FeedCard({ file ,PhotoProfile = null, title, Data, Users = [], Auth, Post, onPress,  }) {
+export default function FeedCard({ file ,PhotoProfile = null, title, Data, Users = [], Auth, Post, onPress, menu = true  }) {
 
     const [modal, setModal] = useState(false);
 
@@ -24,7 +24,7 @@ export default function FeedCard({ file ,PhotoProfile = null, title, Data, Users
         return (PhotoProfile != null) ? <Avatar.Image {...props} size={40} source={Photo} /> : <Avatar.Text {...props} size={40} label={Auth} />
     }
 
-    const RigthContet = props => <ViewMenu onPress={() => setModal(!modal)}><Icon {...props} size={30} name='more-vertical' /></ViewMenu>
+    const RigthContet = props => (menu) ? <ViewMenu onPress={() => setModal(!modal)}><Icon {...props} size={30} name='more-vertical' /></ViewMenu> : null;
 
 
     return (

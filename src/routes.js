@@ -17,7 +17,7 @@ import MapsPage from './pages/maps';
 import ProfilePage from './pages/profile';
 import CamPage from './pages/Cam';
 import PhotoPage from './pages/Photo';
-import CommunityPage from './pages/Community';
+import FreelancerPage from './pages/Freelancer';
 
 const CameraStack = createStackNavigator({
     Camera: {
@@ -36,15 +36,15 @@ const HomeStack = createMaterialBottomTabNavigator({
         screen: HomePage,
         navigationOptions: {
             tabBarIcon: ({ tintColor }) => (
-              <Icon name="home" size={20} color={tintColor} />
+              <Icon name="theater-masks" size={20} color={tintColor} />
             )
         },
     },
-    Comunidade:{
-        screen: CommunityPage,
+    Freelancer:{
+        screen: FreelancerPage,
         navigationOptions: {
             tabBarIcon: ({ tintColor }) => (
-              <Icon name="theater-masks" size={20} color={tintColor} />
+              <Icon name="business-time" size={20} color={tintColor} />
             )
         },
     },

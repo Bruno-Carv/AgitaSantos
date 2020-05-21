@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from './styles';
 import { List } from 'react-native-paper';
 
-export default function Community() {
+export default function Freelancer() {
     return (
         <List.AccordionGroup>
             <List.Accordion title="Accordion 1" id="1">

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { getUser, getID } from '../../services/auth';
-import api from '../../services/api';
+import { getUser } from '../../services/auth';
+import { api } from '../../services/api';
 import { Container, PhotoUser, PostCard, CardProfileDate, FeedsList } from './styles';
-import { Text, FlatList } from 'react-native';
+import { Text, RefreshControl } from 'react-native';
 import FeedCard from '../../components/feed';
-import { ScrollView } from 'react-native-gesture-handler';
 
 export default function Profile() {
 
@@ -21,6 +20,7 @@ export default function Profile() {
     //Controllers Feed
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
+    const [refreshing, setRefreshing] = useState(false);
 
     async function getDate() {
         await getUser().then((data) => {
@@ -30,6 +30,15 @@ export default function Profile() {
             setSocialNetwork(data.artist.socialNetwork);
             setPhoneNumber(data.artist.phoneNumber);
         });
+    }
+
+    async function resetFeeds() {
+        setRefreshing(false);
+        setFeedUser([]);
+        setPage(1);
+        getDate();
+        loadFeedsUser();
+        return true;
     }
 
     async function loadFeedsUser() {
@@ -59,7 +68,10 @@ export default function Profile() {
 
     return (
         <>
-            <Container>
+            <Container refreshControl={
+                <RefreshControl refreshing={refreshing} onRefresh={resetFeeds} />
+            }
+            >
                 <CardProfileDate>
                     <Text>{name}</Text>
                     <Text>{actingField}</Text>
