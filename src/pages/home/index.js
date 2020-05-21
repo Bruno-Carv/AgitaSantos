@@ -61,6 +61,7 @@ export default function Home() {
                     <FeedCard
                         title={feed.title}
                         file={feed.file}
+                        describe={feed.description}
                     />
                 )}
             />

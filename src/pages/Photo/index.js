@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { TouchableOpacity, Linking, Modal, Alert } from 'react-native';
+import { TouchableOpacity, Linking, Alert } from 'react-native';
 import {
     ViewClose,
     ViewPost,
@@ -7,7 +7,9 @@ import {
     ViewSocial,
     SocialButton,
     ViewSend,
-    Image
+    Image,
+    Modal,
+    ModalView
 } from './styles';
 import * as Sharing from 'expo-sharing';
 import Button from '../../components/button';
@@ -103,20 +105,27 @@ export default function Photo({ navigation }) {
                     </ViewSend>
                 </ViewPost>
             </ViewController>
-            <Modal visible={modal} onRequestClose={() => { setModal(!modal) }} presentationStyle='pageSheet' animationType='slide'>
-                <ScrollView>
-                    <Input
-                        placeholder="Titulo"
-                        value={title}
-                        onChangeText={value => setTitle(value)}
-                    />
-                    <Input
-                        placeholder="Descrição"
-                        value={description}
-                        onChangeText={value => setDescription(value)}
-                    />
-                    <Button Text='Enviar' onPress={() => SendPost()} />
-                </ScrollView>
+            <Modal visible={modal} onRequestClose={() => setModal(!modal)} presentationStyle='pageSheet' animationType='slide'>
+                <ModalView>
+                    <ViewClose>
+                        <TouchableOpacity onPress={() => setModal(!modal)}>
+                            <Icon name='close-a' size={25} color='#000' />
+                        </TouchableOpacity>
+                    </ViewClose>
+                    <ScrollView>
+                        <Input
+                            placeholder="Titulo"
+                            value={title}
+                            onChangeText={value => setTitle(value)}
+                        />
+                        <Input
+                            placeholder="Descrição"
+                            value={description}
+                            onChangeText={value => setDescription(value)}
+                        />
+                        <Button Text='Enviar' onPress={() => SendPost()} />
+                    </ScrollView>
+                </ModalView>
             </Modal>
             <Loading visible={loading} />
         </Image>

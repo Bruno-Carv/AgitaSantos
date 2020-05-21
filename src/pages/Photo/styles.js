@@ -5,6 +5,7 @@ export const ViewClose = Styled.View`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
 `;
 
 export const ViewController = Styled.View` 
@@ -48,4 +49,9 @@ export const Image = Styled.ImageBackground`
     height: 100%;
     width: 100%
     
+`;
+
+export const Modal = Styled.Modal``;
+export const ModalView = Styled.View`
+    padding: 20px;
 `;
