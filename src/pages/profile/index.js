@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { getUser } from '../../services/auth';
 import { api } from '../../services/api';
-import { Container, PhotoUser, PostCard, CardProfileDate, FeedsList } from './styles';
+import { Container, PhotoUser, PostCard, CardProfileDate, FeedsList, Name, Action } from './styles';
 import { Text, RefreshControl } from 'react-native';
 import FeedCard from '../../components/feed';
+import { Avatar } from 'react-native-paper';
 
 export default function Profile() {
 
@@ -68,14 +69,11 @@ export default function Profile() {
 
     return (
         <>
-            <Container refreshControl={
-                <RefreshControl refreshing={refreshing} onRefresh={resetFeeds} />
-            }
-            >
+            <Container refreshControl={<RefreshControl refreshing={refreshing} onRefresh={resetFeeds} />} showsVerticalScrollIndicator={false}>
                 <CardProfileDate>
-                    <Text>{name}</Text>
-                    <Text>{actingField}</Text>
-                    <Text>{phoneNumber}</Text>
+                    <Avatar.Image  size={120} source={{ uri: 'https://i6b8b4u5.stackpathcdn.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png' }} />
+                    <Name>{name}</Name>
+                    <Action>{actingField}</Action>
                 </CardProfileDate>
                 {
                     feedUser.map((feed) => (

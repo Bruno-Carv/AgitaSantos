@@ -36,7 +36,7 @@ export default function SignIn({ navigation }) {
         });
     }
     useEffect(() => {
-        logInAutomatic();
+        // logInAutomatic();
     }, []);
 
     return (

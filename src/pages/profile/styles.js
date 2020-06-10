@@ -19,6 +19,19 @@ export const CardFas = Styled.View`
 
 `;
 
+export const Name = Styled.Text`
+    font-size: 30px;
+`;
+
+export const Action = Styled.Text`
+    font-size: 20px;
+    color: #9F9F9F;
+`;
+
 export const CardProfileDate = Styled.View`
     padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 `;
