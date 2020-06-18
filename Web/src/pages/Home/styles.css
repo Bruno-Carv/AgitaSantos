@@ -1,0 +1,85 @@
+.home-container {
+  flex: 1;
+}
+
+.home-container section {
+  padding: 20px 0px;
+  flex: 1;
+  display: flex;
+}
+
+.home-container .home {
+  height: 80vh;
+  background-color: #005129;
+  background-image: url("../../assets/wallpaper.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-container .image {
+  display: flex;
+  justify-content: center;
+}
+
+.home-container .frelencer{
+    height: 60vh;
+    background-image: url("../../assets/empreededor.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-container .frelencer h1{
+    color: #FFF;
+    font-size: 80px;
+}
+.home-container .frelencer p{
+    color: #FFF;
+    font-size: 40px;
+}
+.home-container .users{
+    height: 60vh;
+    background-image: url("../../assets/users.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-container .users h1{
+    color: #FFF;
+    font-size: 80px;
+}
+.home-container .users p{
+    color: #FFF;
+    font-size: 40px;
+}
+
+.home-container .carousel image{
+    display: flex;
+    resize: horizontal;
+    size: cover;
+}
+
+.home-container .feedback{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.home-container .img-link{
+    display: flex;
+    justify-content: center;
+}
+
+.home-container a img{
+    display: flex;
+    resize: horizontal;
+    size: cover;
+    height: 90px;
+}

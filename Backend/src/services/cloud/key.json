@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "agita-santos",
+  "private_key_id": "2410bada079f5dfa61d3eb56f5251ae77ad69682",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCse6ZxmFbClGna\nX7pe/DsxrXVV5X3NEPwj2s2b/VpRKiuV9/Rets7sJjCCtqW+ya94YhT1mW2Hhtl8\n4e+UGpUKL5EONiE28dLO1DveCO2jrB1JTv3sb0qn+l8MlCFPG9waFdkgaKigx355\nEMq+SBscnC47VR3wrBjHmyBQVKLf0epuLfCRqiBUno6FTrTHJ1+7OqcYwg8QhguV\nmHJUbf6YdiVYwe2yAxHayXNKOKE7M6uE+im2j0jMGp6VQuUbyPU1DqjhCEcbgZo4\n36nW+xlgJGg10gFCrFTyB+Zb/PyQizjUJMxj0OW1lZg/seVJx20Pg3g9nlNBrulE\nnlRHnL+hAgMBAAECggEAAYwU5sM08QcjiXDPI0u8LLKHgUsfFSQ0PM6ZRk9QHHcG\nP9DC9YgKhGIF0KBajYLx4uCvWzIigkMWh5kfvOp9oIMjeBcKdnuWFmKfPFtEZXHV\na+tMWg74Aph7eomIIHVppKbCRTkHHTUY6HVa+ji7nIa2n/PgIkDq8nxs3meZ8+vC\nefQiXgCZW58KD/1HJkPVvpMICfjldj6rWryVkRw2ru0vq9lmIWfwbu5P2KFT/C4x\nopboxSoRPbjfQaAq/jESGieE1UWPp7sn4eD1GBJc3ZnHFoNJmfJQLgac1w872HyF\nNfZFJrbMdwDrihoKOcuYvylhjKsrTaC7pe1mtBLU4QKBgQDd0XwGzxL+928gRv7I\nH1wBWIeCzizs/VEjG83cSifYVkQ3qUE0QzmXBz3BRBb6oC2wtWLMAoM/xh3CA87O\nJi8eZaK/8q3C7d6vEIs6BM8kWEypmDMtmUe7cJDm5Qe6Fxgi0XqXabOFOwMbtp3a\nxD7Mo6stgaZ+d1ppRbptR6oh0QKBgQDHD+/F4i0nsPLSHbjBzDeT/MoQNC8nWRir\nHamTgYYy03rhiBAAccAh/kcm6uSwkCrpUsGc7D0RAgTtVaoJMcbILbOokrvf/SoG\n9Tt2uKlKPBc9l05TGNrv6DdseWAZY+XavX0IS0vyxdlk9NJcWixYBXRehr7163bW\nChT/q0nk0QKBgGHJBq8NvGcP9zo4cfsQ8ANb3qlIcL+s0Ib0q+TQAA67wOj0wVzj\nwdCVjaDUfnjQAjRjUgFznh6QHPA5s4JnjOAOmBecSQOkz0VHusjB8/smve0Jvo38\ng4XbEtXm42gi5C39QNjc7RnvsOgXsjEN0E1wXXb7L8WSohXEenHQZOzxAoGBAKs3\n5/L7Ef/b0WAtNGds8jkV6+94Ez7zAabdQqifdgBtqnomgC0BqlMS1byBueaselxq\nVCJXiEcCx54kWrbB28r+lFNgsrx8kxOdB2KcfvBdM1hEtpf+/wHvaQyicaglJuW4\nqrzhlxfgWZbehbntzcqAFpHfsIzx1StRTLKEcHChAoGAMifrwtYftRjOTV0OU/Us\nPO67G0c/IexOPaFDFrJ398xE+7ztk4TuVej5rsWLlE4xZnIdGENlF7kvfY/Jddk4\n3wDuRFvZ85UTRI99RvZM5cn2+G6txFuBGgyr1FjJTvJLMGADsSXw7puypGpcI+8C\nTktO1PWqeRRY3/0j8662nms=\n-----END PRIVATE KEY-----\n",
+  "client_email": "storage@agita-santos.iam.gserviceaccount.com",
+  "client_id": "100198519821969953351",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storage%40agita-santos.iam.gserviceaccount.com"
+}

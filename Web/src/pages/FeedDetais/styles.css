@@ -1,0 +1,37 @@
+.post-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.post-container .post-comments-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-container .avatar{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.post-container .post-comments-input form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-container .post-comments-input form button{
+    margin: 30px
+}
+
+.post-comments .info-user{
+    display: flex;
+    align-items: center;
+}
+
+.post-comments .info-user-comment{
+    margin: 15px 10px
+}
