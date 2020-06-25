@@ -24,4 +24,46 @@
 
 ## Sobre o Agita Santos
 
+Este projeto visa a criação de um template que possa ser utilizado no momento de criação de projetos utilizando React Native, visto que o processo de instalação e configuração das libs no início de um projeto podem gerar certa complexidade e muitas vezes até erros que atrasam o processo, atrapalhando assim o fluxo de desenvolvimento.
 
+### Tecnologias aplicadas
+
+## Começando
+
+### Pré-requisitos
+
+### Estrutura de Arquivos
+
+```bash
+MaratoraESAMC2020
+├── src/
+│   ├── config/
+│   │   └── ReactotronConfig.js
+│   ├── images/
+│   │   ├── rocketseat_logo_roxa.png
+│   │   └── rocketseat_logo.png
+│   ├── pages/
+│   │   └── Main/
+│   │       └── index.js
+│   ├── services/
+│   │   └── api.js
+│   ├── store/
+│   │   ├── ducks/
+│   │   │   └── index.js
+│   │   ├── sagas/
+│   │   │   └── index.js
+│   │   └── index.js
+│   ├── index.js
+│   └── routes.js
+├── .editorconfig
+├── .eslintrc.json
+├── .gitignore
+├── babel.config.js
+├── dependencies.json
+├── devDependencies.json
+├── index.js
+├── jsconfig.js
+├── LICENSE
+├── package.json
+└── README.md
+```
