@@ -9,7 +9,7 @@
 ## Tabela de Conteúdo
 
 - [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
-- [Sobre o Projeto](#sobre-o-Agita-Santos)
+- [Sobre o Projeto](#sobre-o-Projeto)
   - [Tecnologias aplicadas](#Tecnologias-aplicadas)
 - [Interface da aplicação](#Interface-da-aplicação)
 - [Começando](#Começando)
@@ -18,7 +18,7 @@
 - [Licença](#licen%C3%A7a)
 - [Contato](#contato)
 
-## Sobre o Agita Santos
+## Sobre o Projeto
 
 Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos, que tem como objetivo ajudar os artistas da cidade de santos para ter uma ferramenta de divulgação, onde empresas e fãs possam ter acesso a seu perfil artistico, assim o aplicativo o artista pode posta as fotos, compartilhar para redes sociais. 
 
