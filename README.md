@@ -48,8 +48,9 @@ Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos,
 
 ### Pré-requisitos
 
-- [NodeJS](https://reactnavigation.org/) - versão 12.18 LTS;
-- [Yarn](https://reactnavigation.org/) - versão 12.18 LTS;
+- [NodeJS](https://nodejs.org/pt-br/) - versão 12.18 LTS;
+- [Yarn](https://yarnpkg.com/) - versão 1.22.0;
+- [MongoDB](https://www.mongodb.com/) - versão 4.2.8;
 
 ### Estrutura de Arquivos
 
