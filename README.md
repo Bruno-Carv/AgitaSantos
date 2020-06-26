@@ -28,16 +28,13 @@ Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos,
 
 ## Interface de aplicação
 
-### Aplicação Mobile
-
-<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(1).PNG?raw=true" width="100"></p>
-<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(3).PNG?raw=true" width="100"></p>
-<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(5).PNG?raw=true" width="100"></p>
-<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(6).PNG?raw=true" width="100"></p>
-
 ### Aplicação Web
 
-<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Web/src/assets/logo-agitasantos.png?raw=true" width="400"></p>
+<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/web.png?raw=true" width="400"></p>
+
+### Aplicação Mobile
+
+<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/Mobile.png?raw=true" width="400"></p>
 
 ## Tecnologias aplicadas
 
