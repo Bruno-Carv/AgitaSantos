@@ -10,15 +10,13 @@
 
 - [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
 - [Sobre o Projeto](#sobre-o-Agita-Santos)
-  - [Feito Com](#feito-com)
-- [Começando](#come%C3%A7ando)
+  - [Tecnologias aplicadas](#Tecnologias-aplicadas)
+- [Interface da aplicação](#Interface-da-aplicação)
+- [Começando](#Interface-da-aplicação)
   - [Pré-requisitos](#pr%C3%A9-requisitos)
   - [Estrutura de Arquivos](#estrutura-de-arquivos)
   - [Instalação](#instala%C3%A7%C3%A3o)
-    - [Passo Adicional no Android](#passo-adicional-no-android)
-  - [Edição](#edi%C3%A7%C3%A3o)
   - [Publicação](#publica%C3%A7%C3%A3o)
-- [Contribuição](#contribui%C3%A7%C3%A3o)
 - [Licença](#licen%C3%A7a)
 - [Contato](#contato)
 
@@ -26,7 +24,9 @@
 
 Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos, que tem como objetivo ajudar os artistas da cidade de santos para ter uma ferramenta de divulgação, onde empresas e fãs possam ter acesso a seu perfil artistico, assim o aplicativo o artista pode posta as fotos, compartilhar para redes sociais. 
 
-## Interface de aplicação
+### Tecnologias aplicadas
+
+## Interface da aplicação
 
 ### Aplicação Web
 
@@ -35,9 +35,6 @@ Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos,
 ### Aplicação Mobile
 
 <p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/Mobile.png?raw=true" width="400"></p>
-
-## Tecnologias aplicadas
-
 
 ## Estrutura de Arquivos
 
