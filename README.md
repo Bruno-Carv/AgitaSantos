@@ -26,15 +26,20 @@
 
 Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos, que tem como objetivo ajudar os artistas da cidade de santos para ter uma ferramenta de divulgação, onde empresas e fãs possam ter acesso a seu perfil artistico, assim o aplicativo o artista pode posta as fotos, compartilhar para redes sociais. 
 
-### Tecnologias aplicadas
+## Interface de aplicação
 
-## Começando
+### Aplicação Mobile
 
-### Pré-requisitos
+<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Web/src/assets/logo-agitasantos.png?raw=true" width="400"></p>
 
-Antes de seguirmos para as configurações e uso do template, é ideal que você tenha o ambiente configurado para criar e testar aplicativos em React Native, para isso você pode seguir o guia do link abaixo:
+### Aplicação Web
 
-### Estrutura de Arquivos
+<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Web/src/assets/logo-agitasantos.png?raw=true" width="400"></p>
+
+## Tecnologias aplicadas
+
+
+## Estrutura de Arquivos
 
 ```bash
 MaratoraESAMC2020
@@ -142,6 +147,12 @@ MaratoraESAMC2020
 │   ├── package.json
 │   ├── yarn-error.log
 │   └── yarn.lock
+├── Doc/
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── yarn.lock
+│   ├── package.json
+│   └── README.md
 └── Web/
     ├── public/
     │   ├── favicon.png
@@ -168,3 +179,13 @@ MaratoraESAMC2020
     ├── yarn.lock
     └── README.md
 ```
+
+## Licença
+
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+
+<!-- CONTACT -->
+
+## Contato
+
+Bruno Silva Carvalho - [Github](https://github.com/bruno-carv)
