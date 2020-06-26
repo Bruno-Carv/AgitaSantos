@@ -12,7 +12,7 @@
 - [Sobre o Projeto](#sobre-o-Agita-Santos)
   - [Tecnologias aplicadas](#Tecnologias-aplicadas)
 - [Interface da aplicação](#Interface-da-aplicação)
-- [Começando](#Interface-da-aplicação)
+- [Começando](#Começando)
   - [Pré-requisitos](#Pré-requisitos)
   - [Estrutura de Arquivos](#estrutura-de-arquivos)
 - [Licença](#licen%C3%A7a)
