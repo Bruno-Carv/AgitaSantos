@@ -36,34 +36,133 @@ Este projeto visa a criação de um template que possa ser utilizado no momento 
 
 ```bash
 MaratoraESAMC2020
-├── src/
-│   ├── config/
-│   │   └── ReactotronConfig.js
-│   ├── images/
-│   │   ├── rocketseat_logo_roxa.png
-│   │   └── rocketseat_logo.png
-│   ├── pages/
-│   │   └── Main/
-│   │       └── index.js
-│   ├── services/
-│   │   └── api.js
-│   ├── store/
-│   │   ├── ducks/
+├── Backend/
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── controllers/
+│   │   │   │   ├── ArtistController.js
+│   │   │   │   ├── CommunityController.js
+│   │   │   │   ├── EventController.js
+│   │   │   │   └── FeedControllers.js
+│   │   │   ├── models/
+│   │   │   │   ├── Artist.js
+│   │   │   │   ├── Community.js
+│   │   │   │   ├── Event.js
+│   │   │   │   └── Feed.js
+│   │   │   └── secure/
+│   │   │       └── token.js
+│   │   ├── database/
 │   │   │   └── index.js
-│   │   ├── sagas/
-│   │   │   └── index.js
-│   │   └── index.js
-│   ├── index.js
-│   └── routes.js
-├── .editorconfig
-├── .eslintrc.json
-├── .gitignore
-├── babel.config.js
-├── dependencies.json
-├── devDependencies.json
-├── index.js
-├── jsconfig.js
-├── LICENSE
-├── package.json
-└── README.md
+│   │   ├── routes/
+│   │   │   ├── artistRouter.js
+│   │   │   ├── communityRouter.js
+│   │   │   ├── eventsRouter.js
+│   │   │   ├── feedRouter.js
+│   │   │   └── router.js
+│   │   ├── services/
+│   │   │   ├── aws/
+│   │   │   │   ├── index.js
+│   │   │   │   └── s3.js
+│   │   │   ├── cloud/
+│   │   │   │   ├── index.js
+│   │   │   │   ├── key.json
+│   │   │   │   └── storage.js
+│   │   ├── validator/
+│   │   │   └── artistValidation.js
+│   │   ├── app.js
+│   │   └── server.js
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── yarn.lock
+│   ├── package.json
+│   └── README.md
+├── Mobile/
+│   ├── .expo-shared/
+│   │   └── assets.json
+│   ├── assets/
+│   │   ├── icon.png
+│   │   └── splash.png
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── Pintor.jpg
+│   │   │   ├── logo-agitasantos-hori.png
+│   │   │   ├── logo-agitasantos.png
+│   │   │   └── logoPrefeitura.png
+│   │   ├── components/
+│   │   │   ├── AlbumCamera.js
+│   │   │   ├── CameraButton.js
+│   │   │   ├── button.js
+│   │   │   ├── facebookSignIn.js
+│   │   │   ├── feed.js
+│   │   │   ├── filter.js
+│   │   │   ├── googleSignIn.js
+│   │   │   ├── input.js
+│   │   │   ├── linha.js
+│   │   │   └── loading.js
+│   │   ├── pages/
+│   │   │   ├── Cam
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.js
+│   │   │   ├── Freelancer
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.js
+│   │   │   ├── Photo
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.js
+│   │   │   ├── home
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.js
+│   │   │   ├── loading
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.js
+│   │   │   ├── maps
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.js
+│   │   │   ├── profile
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.js
+│   │   │   ├── signin
+│   │   │   │   ├── index.js
+│   │   │   │   └── styles.js
+│   │   │   └── signup
+│   │   │       ├── index.js
+│   │   │       └── styles.js
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   └── auth.js
+│   │   └── routes.js
+│   ├── .gitignore
+│   ├── App.js
+│   ├── README.md
+│   ├── app.json
+│   ├── babel.config.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── yarn-error.log
+│   └── yarn.lock
+└── Web/
+    ├── public/
+    │   ├── favicon.png
+    │   └── index.html
+    ├── src/
+    │   ├── assets/
+    │   ├── components/
+    │   ├── layout/
+    │   ├── pages/
+    │   ├── services/
+    │   ├── styles/
+    │   │   ├── css/
+    │   │   │   ├── global.min.css
+    │   │   │   └── global.min.css.map
+    │   │   └── scss/
+    │   │       └── global.scss
+    │   ├── App.js
+    │   ├── index.js
+    │   └── routes.js
+    ├── .env.example
+    ├── .gitignore
+    ├── package.json
+    ├── server.js
+    ├── yarn.lock
+    └── README.md
 ```
