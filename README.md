@@ -30,20 +30,10 @@ Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos,
 
 ### Aplicação Mobile
 
-<div style="flex:1;flex-direction:raw">
 <p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(1).PNG?raw=true" width="100"></p>
-<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(2).PNG?raw=true" width="100"></p>
-</div>
-
-<div style="flex:1;flex-direction:raw">
 <p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(3).PNG?raw=true" width="100"></p>
-<p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(4).PNG?raw=true" width="100"></p>
-</div>
-
-<div style="flex:1;flex-direction:raw">
 <p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(5).PNG?raw=true" width="100"></p>
 <p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/mobile%20(6).PNG?raw=true" width="100"></p>
-</div>
 
 ### Aplicação Web
 
