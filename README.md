@@ -13,10 +13,8 @@
   - [Tecnologias aplicadas](#Tecnologias-aplicadas)
 - [Interface da aplicação](#Interface-da-aplicação)
 - [Começando](#Interface-da-aplicação)
-  - [Pré-requisitos](#pr%C3%A9-requisitos)
+  - [Pré-requisitos](#Pré-requisitos)
   - [Estrutura de Arquivos](#estrutura-de-arquivos)
-  - [Instalação](#instala%C3%A7%C3%A3o)
-  - [Publicação](#publica%C3%A7%C3%A3o)
 - [Licença](#licen%C3%A7a)
 - [Contato](#contato)
 
@@ -25,6 +23,16 @@
 Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos, que tem como objetivo ajudar os artistas da cidade de santos para ter uma ferramenta de divulgação, onde empresas e fãs possam ter acesso a seu perfil artistico, assim o aplicativo o artista pode posta as fotos, compartilhar para redes sociais. 
 
 ### Tecnologias aplicadas
+
+- [Expo](https://expo.io/) - O Expo é uma ferramenta utilizada no desenvolvimento mobile com React Native que permite o fácil acesso às API’s nativas do dispositivo sem precisar instalar qualquer dependência ou alterar código nativo.
+
+- [React Native](https://pt-br.reactjs.org/) - O React Native é um projeto desenvolvido pelos engenheiros do Facebook e que consiste em uma série de ferramentas que viabilizam a criação de aplicações móveis nativas para a plataforma iOS e Android, utilizando o que há de mais moderno no desenvolvimento Front-end – mirando no futuro. É o estado da arte no que se refere ao desenvolvimento mobile baseado em JavaScript.
+
+- [React](https://reactnative.dev/) - O React é a biblioteca mais popular do JavaScript e é usada para construir uma interface de usuário (IU). Ela oferece uma resposta excelente para o usuário adicionar comandos usando um novo método de renderizar sites. Os componentes dessa ferramenta foram desenvolvidos pelo Facebook.
+
+- [MongoDB](https://www.mongodb.com/) - MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas. É desenvolvido pela MongoDB Inc. e publicado sob uma combinação da GNU Affero General Public License e Licença Apache.
+
+- [NodeJS](https://nodejs.org/pt-br/) - Node.js é um interpretador de JavaScript assíncrono com código aberto orientado a eventos, criado por Ryan Dahl em 2009, focado em migrar a programação do Javascript do cliente para os servidores, criando aplicações de alta escalabilidade, manipulando milhares de conexões/eventos simultâneas em tempo real numa única máquina física.
 
 ## Interface da aplicação
 
@@ -36,7 +44,14 @@ Este projeto foi desenvolvido para uma maratona da universidade da ESAMC Santos,
 
 <p align="center"><img src="https://github.com/Bruno-Carv/MaratoraESAMC2020/blob/master/Doc/Mobile.png?raw=true" width="400"></p>
 
-## Estrutura de Arquivos
+## Começando
+
+### Pré-requisitos
+
+- [NodeJS](https://reactnavigation.org/) - versão 12.18 LTS;
+- [Yarn](https://reactnavigation.org/) - versão 12.18 LTS;
+
+### Estrutura de Arquivos
 
 ```bash
 MaratoraESAMC2020
