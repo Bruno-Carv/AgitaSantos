@@ -193,9 +193,9 @@ MaratoraESAMC2020
     └── README.md
 ```
 
-## Licença
+<!-- ## Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações. -->
 
 <!-- CONTACT -->
 
